@@ -1,0 +1,8 @@
+<section>
+  <h2 class="font-medium text-2xl mb-5 md:text-4xl">We differentiate ourselves by</h2>
+  <div class="grid-container">
+    @for(diffentiator of listOfDifferentiators; track diffentiator.id) {
+    <app-differentiators-card [differentiator]="diffentiator"></app-differentiators-card>
+    }
+  </div>
+</section>
